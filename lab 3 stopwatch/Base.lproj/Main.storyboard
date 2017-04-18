@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gw5-p5-ntW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="THj-0i-Frr">
+            <objects>
+                <viewController id="gw5-p5-ntW" customClass="ViewController" customModule="RiyazLAB3stopwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lpE-DE-D4T"/>
+                        <viewControllerLayoutGuide type="bottom" id="LkE-ib-aFh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XfM-v1-H1a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJJ-Rt-6Wj">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="i9n-KN-VZc">
+                                        <connections>
+                                            <action selector="startTimer:" destination="gw5-p5-ntW" id="To5-Cm-6t3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8AF-5y-rWs"/>
+                                    <barButtonItem systemItem="pause" id="BVp-NP-tGA">
+                                        <connections>
+                                            <action selector="pauseTimer:" destination="gw5-p5-ntW" id="uJW-dR-5On"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Scq-zl-2Hi"/>
+                                    <barButtonItem systemItem="stop" id="KsH-kH-4Yb">
+                                        <connections>
+                                            <action selector="resetTimer:" destination="gw5-p5-ntW" id="hNl-jr-J43"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eul-Nv-JUh">
+                                <rect key="frame" x="73" y="263" width="229" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4b2aa3b661c3ea1df158ea604259cc6f.png" translatesAutoresizingMaskIntoConstraints="NO" id="HX3-g7-A7K">
+                                <rect key="frame" x="136" y="59" width="103" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="BVp-NP-tGA" id="J1A-j0-X6U"/>
+                        <outlet property="resetbutton" destination="KsH-kH-4Yb" id="sZd-88-b7o"/>
+                        <outlet property="startButton" destination="i9n-KN-VZc" id="R8U-EA-TXC"/>
+                        <outlet property="timerlabel" destination="eul-Nv-JUh" id="KHy-ys-dex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vir-W6-fde" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.5" y="154.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4b2aa3b661c3ea1df158ea604259cc6f.png" width="577" height="720"/>
+    </resources>
+</document>
